@@ -20,4 +20,3 @@ jobs:
 
       - name: Start bot
         run: node bot.js
-        
