@@ -14,7 +14,7 @@ function generateNames(count) {
   const ten = ["Hung","Nam","Minh","Khanh","Tuan","Quang","Duc","Anh","Phong","Phuong","Hieu"]
   const out = new Set()
   while (out.size < count) {
-    const name = `7_is_${ho[Math.floor(Math.random()*ho.length)]}${ten[Math.floor(Math.random()*ten.length)]}${Math.floor(Math.random()*90)+10}`
+    const name = `${ho[Math.floor(Math.random()*ho.length)]}${ten[Math.floor(Math.random()*ten.length)]}${Math.floor(Math.random()*90)+10}`
     out.add(name)
   }
   return Array.from(out)
