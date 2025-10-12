@@ -1,30 +1,16 @@
 const mineflayer = require('mineflayer')
 
-const names = [
-  "7_is_Hoang",
-  "7_is_Hung",
-  "7_is_Nam",
-  "7_is_Minh",
-  "7_is_Phuong"
-]
+const bot = mineflayer.createBot({
+  host: 'play.craftvn.net', // ⚠️ đổi thành IP/host server bạn
+  port: 25565,
+  username: '7_is_Hoang',
+  auth: 'offline'           // nếu server crack; nếu premium -> 'microsoft'
+})
 
-function createBot(name) {
-  const bot = mineflayer.createBot({
-    host: process.env.SERVER_HOST || 'play2.eternalzero.cloud',
-    port: Number(process.env.SERVER_PORT || 27199),
-    username: name,
-    auth: 'offline'
-  })
+bot.on('spawn', () => {
+  console.log(`${bot.username} đã join server!`)
+  bot.chat("Xin chào từ GitHub Actions 🤖")
+})
 
-  bot.on('spawn', () => {
-    console.log(`${name} đã join server!`)
-    bot.chat(`Xin chào, tôi là ${name}, chạy trên GitHub Actions!`)
-  })
-
-  bot.on('error', err => console.log(`${name} error:`, err))
-  bot.on('kicked', reason => console.log(`${name} bị kick:`, reason))
-}
-
-for (const n of names) {
-  createBot(n)
-}
+bot.on('error', err => console.log('Error:', err))
+bot.on('kicked', reason => console.log('Kicked:', reason))
