@@ -4,8 +4,8 @@ const mineflayer = require('mineflayer')
 const BOT_COUNT = 10
 
 // Thông số server — đổi theo server của bạn hoặc dùng biến môi trường
-const SERVER_HOST = process.env.SERVER_HOST || 'play.craftvn.net'
-const SERVER_PORT = Number(process.env.SERVER_PORT || 25565)
+const SERVER_HOST = process.env.SERVER_HOST || 'play2.eternalzero.cloud'
+const SERVER_PORT = Number(process.env.SERVER_PORT || 27199)
 const AUTH_MODE = process.env.AUTH_MODE || 'offline' // 'offline' hoặc 'microsoft'
 
 // Tạo tên kiểu VN (unique)
