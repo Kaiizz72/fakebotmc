@@ -10,8 +10,8 @@ const names = [
 
 function createBot(name) {
   const bot = mineflayer.createBot({
-    host: process.env.SERVER_HOST || 'mc.example.com',
-    port: Number(process.env.SERVER_PORT || 25565),
+    host: process.env.SERVER_HOST || 'play2.eternalzero.cloud',
+    port: Number(process.env.SERVER_PORT || 27199),
     username: name,
     auth: 'offline'
   })
