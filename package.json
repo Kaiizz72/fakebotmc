@@ -1,0 +1,12 @@
+{
+  "name": "mineflayer-github",
+  "version": "1.0.0",
+  "description": "Mineflayer bot chạy trên GitHub Actions",
+  "main": "bot.js",
+  "scripts": {
+    "start": "node bot.js"
+  },
+  "dependencies": {
+    "mineflayer": "^4.20.0"
+  }
+}
