@@ -22,8 +22,8 @@ jobs:
 
       - name: Start bot fleet
         env:
-          SERVER_HOST: per10.asaka.asia   # đổi host nếu cần
-          SERVER_PORT: "30060"
+          SERVER_HOST: darknight.asakahost.net   # đổi host nếu cần
+          SERVER_PORT: "25565"
           AUTH_MODE: "offline"                  # hoặc microsoft nếu acc MS
           BOT_PASS: "123456789"
         run: node bot.js
