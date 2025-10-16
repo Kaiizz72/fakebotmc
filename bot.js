@@ -6,8 +6,8 @@ const pvpPlugin = require('mineflayer-pvp').plugin
 const { GoalNear } = goals
 
 // ====== CONFIG ======
-const SERVER_HOST = process.env.SERVER_HOST || 'per10.asaka.asia'
-const SERVER_PORT = Number(process.env.SERVER_PORT || 30060)
+const SERVER_HOST = process.env.SERVER_HOST || 'darknight.asakahost.net'
+const SERVER_PORT = Number(process.env.SERVER_PORT || 25565)
 const AUTH_MODE   = process.env.AUTH_MODE || 'offline'
 const PASSWORD    = process.env.BOT_PASS || '123456789'
 
