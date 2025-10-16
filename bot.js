@@ -10,8 +10,8 @@ const autoEat = require('mineflayer-auto-eat').plugin
 
 const BOT_COUNT = parseInt(process.env.BOT_COUNT || '30', 10)
 const JOIN_INTERVAL_MS = parseInt(process.env.JOIN_INTERVAL_MS || '15000', 10)
-const HOST = process.env.SERVER_HOST || 'play2.eternalzero.cloud'
-const PORT = parseInt(process.env.SERVER_PORT || '27199', 10)
+const HOST = process.env.SERVER_HOST || 'darknight.asakahost.net'
+const PORT = parseInt(process.env.SERVER_PORT || '25565', 10)
 const AUTH = process.env.AUTH_MODE || 'offline'
 const PASS = process.env.BOT_PASS || '12345678@'
 const SURNAME_LIMIT = parseInt(process.env.SURNAME_LIMIT || '3', 10)
